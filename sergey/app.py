@@ -84,6 +84,13 @@ def life():
     page_title = "Жизнь"
     return render_template("life.j2", page_title=page_title)
 
+@app.route("/lk")
+def lk():
+    """Страница личная."""
+    page_title = "Личная"
+    return render_template("lk.j2", page_title=page_title)
+
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():

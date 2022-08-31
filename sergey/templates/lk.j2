@@ -1,26 +1,40 @@
-{% extends 'base.html' %}
+{% extends 'base.j2' %}
 
 {% block content %}
 
-  <!-- Wrapper -->
-  <section id="wrapper">
-          <header>
-            <div class="inner">
-              <h2>Жизнь</h2>
-              <p>...это очень личная часть...потом, все потом...
-              </p>
-            </div>
-          </header>
-
-          <!-- Content -->
-            <div class="wrapper">
-              <div class="inner">
-                <h3 class="major">НАДО ЕЕ ПРОЖИТЬ ТАК, ЧТО БЫ ПРО ТЕБЯ ПОТОМКИ ГОВОРИЛИ С ЗАМЕРАНИЕМ СЕРДЦА!!!</h3>
-                <!--<a href="https://www.youtube.com/watch?v=vx2u5uUu3DE" target="_blank" class="special">Let's go!</a>-->
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/vx2u5uUu3DE" title="Bon Jovi - It's My Life (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-              </div>
-            </div>
-
+  <section id="four" class="wrapper alt style1">
+    <div class="inner">
+      <h2 class="major">Жить захочешь - не так раскарячишься! Реклама</h2>
+      <p>барахолка</p>
+      <section class="features">
+        <article>
+          <a href="#" class="image"><img src={{ url_for('static', filename='images/mirr.jpg') }} alt="" /></a>
+          <h3 class="major">зеркало</h3>
+          <p>Продам историю</p>
+          <a href="https://www.avito.ru/sankt-peterburg/mebel_i_interer/zerkalo_trelyazh_2489099739" target="_blank" class="special">Для любопытных</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src={{ url_for('static', filename='images/pic05.jpg') }} alt="" /></a>
+          <h3 class="major">Здесь могла быть ваша реклама</h3>
+          <p>100$</p>
+          <a href="#" class="special">Для любопытных</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src={{ url_for('static', filename='images/pic06.jpg') }} alt="" /></a>
+          <h3 class="major">Здесь могла быть ваша реклама</h3>
+          <p>100$</p>
+          <a href="#" class="special">Для любопытных</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src={{ url_for('static', filename='images/pic07.jpg') }} alt="" /></a>
+          <h3 class="major">Здесь могла быть ваша реклама</h3>
+          <p>100$</p>
+          <a href="#" class="special">Для любопытных</a>
+        </article>
+      </section>
+      <ul class="actions">
+        <li><a href="#" class="button">Посмотреть все</a></li>
+      </ul>
+    </div>
   </section>
-  {% endblock %}
+{% endblock %}
